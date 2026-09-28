@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A modern responsive restaurant website.">
+  <title>The Spice Table | Restaurant</title>
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top restaurant-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">The Spice Table</a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+              aria-controls="mainNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#specials">Specials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-warning px-4" href="#contact">Book a Table</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="badge bg-warning text-dark mb-3">Fresh • Local • Delicious</span>
+      <h1 class="display-3 fw-bold">Good food.<br>Good mood.</h1>
+      <p class="lead mb-4">
+        Contemporary flavours, warm hospitality and dishes made with love.
+      </p>
+      <a href="#menu" class="btn btn-warning btn-lg me-2">Explore Menu</a>
+      <a href="#location" class="btn btn-outline-light btn-lg">Find Us</a>
+    </div>
+  </header>
+
+  <!-- MENU CATEGORIES -->
+  <section id="menu" class="section-padding">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="eyebrow">OUR MENU</span>
+        <h2>Something for everyone</h2>
+        <p>Explore our favourite categories, prepared fresh every day.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-6 col-lg-3">
+          <a href="#" class="category-card">
+            <img src="images/menu-starters.svg" alt="Starters">
+            <div class="category-card-content">
+              <h3>Starters</h3>
+              <span>Explore →</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <a href="#" class="category-card">
+            <img src="images/menu-main-course.svg" alt="Main Course">
+            <div class="category-card-content">
+              <h3>Main Course</h3>
+              <span>Explore →</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <a href="#" class="category-card">
+            <img src="images/menu-desserts.svg" alt="Desserts">
+            <div class="category-card-content">
+              <h3>Desserts</h3>
+              <span>Explore →</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <a href="#" class="category-card">
+            <img src="images/menu-drinks.svg" alt="Drinks">
+            <div class="category-card-content">
+              <h3>Drinks</h3>
+              <span>Explore →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIALS -->
+  <section id="specials" class="specials-section section-padding">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="eyebrow">CHEF'S PICKS</span>
+        <h2>Today's Specials</h2>
+        <p>A few dishes we think you shouldn't miss.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="special-card">
+            <img src="images/special-1.svg" alt="Signature dish">
+            <div class="p-4">
+              <div class="d-flex justify-content-between gap-3">
+                <h3>Signature Curry</h3>
+                <strong>₹395</strong>
+              </div>
+              <p>Slow-cooked spices, seasonal vegetables and our house masala.</p>
+              <a href="#" class="text-decoration-none">View dish →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="special-card">
+            <img src="images/special-2.svg" alt="Chef special">
+            <div class="p-4">
+              <div class="d-flex justify-content-between gap-3">
+                <h3>Chef's Platter</h3>
+                <strong>₹525</strong>
+              </div>
+              <p>A selection of small plates designed for sharing with friends.</p>
+              <a href="#" class="text-decoration-none">View dish →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="special-card">
+            <img src="images/special-3.svg" alt="Dessert special">
+            <div class="p-4">
+              <div class="d-flex justify-content-between gap-3">
+                <h3>House Dessert</h3>
+                <strong>₹225</strong>
+              </div>
+              <p>Our rotating dessert of the week, made fresh in-house.</p>
+              <a href="#" class="text-decoration-none">View dish →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION / MAP -->
+  <section id="location" class="section-padding">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <span class="eyebrow">VISIT US</span>
+          <h2>Come hungry.<br>Leave happy.</h2>
+          <p class="text-muted">
+            123 Example Street, Kolkata, West Bengal 700001
+          </p>
+
+          <div class="location-details">
+            <p><strong>Opening Hours</strong><br>
+              Mon–Thu: 12:00 PM – 10:30 PM<br>
+              Fri–Sun: 12:00 PM – 11:30 PM
+            </p>
+            <p><strong>Phone</strong><br>
+              <a href="tel:+919999999999">+91 99999 99999</a>
+            </p>
+          </div>
+
+          <a href="#contact" class="btn btn-dark">Reserve a Table</a>
+        </div>
+
+        <div class="col-lg-7">
+          <!-- Replace this placeholder with your Google Maps embed -->
+          <div class="map-placeholder">
+            <img src="images/map-placeholder.svg" alt="Map placeholder">
+            <div class="map-label">
+              <strong>The Spice Table</strong>
+              <span>Replace with Google Maps embed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section id="contact" class="cta-section">
+    <div class="container text-center">
+      <h2>Planning a special evening?</h2>
+      <p>Call us to reserve your table or ask about private dining.</p>
+      <a href="tel:+919999999999" class="btn btn-warning btn-lg">Call +91 99999 99999</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h3>The Spice Table</h3>
+          <p class="mb-0">Fresh flavours. Warm moments.</p>
+        </div>
+
+        <div class="col-md-6 text-md-end">
+          <div class="footer-links mb-3">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#specials">Specials</a>
+            <a href="#location">Location</a>
+          </div>
+          <p class="small mb-0">© 2026 The Spice Table. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
